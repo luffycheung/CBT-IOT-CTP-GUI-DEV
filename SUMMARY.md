@@ -21,5 +21,5 @@
     * [实验五. 智慧农业自动控温系统实验](chapter4/experiment05/smartagricultrue_autothermostat.md)
     * [实验六. 智慧农业自动通风系统实验](chapter4/experiment06/smartagricultrue_auto_ventilation.md)
     * [实验七. 智慧农业自动喷灌系统实验](chapter4/experiment07/smartagricultrue_auto_irrigate.md)
-    * [实验八. 智能商超管理系统实验](chapter4/experiment08/supermarket_manager.mk)
+    * [实验八. 智能商超管理系统实验](chapter4/experiment08/supermarket_manager.md)
 
