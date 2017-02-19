@@ -338,6 +338,8 @@ public class Sensor {
  阅读 [Using JavaFX Properties and Binding][Using JavaFX Properties and Binding] 学习更多关于 Properties 的内容。
 
 
+
+
 [oracle]: http://www.oracle.com
 
 [JavaFX Scene Graph]: http://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm
