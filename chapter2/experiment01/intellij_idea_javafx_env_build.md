@@ -123,23 +123,27 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)
 ### 认识JavaFX项目
 
 
-/help/img/idea/2016.3/NewProjectJavaFXInitialStructure.png
-The folder src is for your source code. In this folder, there is already a package called sample containing three files:
+![](/chapter2/experiment01/NewProjectJavaFXInitialStructure.png)
 
-Main.java. This is the main application class for starting the sample application.
-sample.fxml. This is the FXML file for defining the user interface.
-Controller.java. This is the controller class intended to handle user interactions with the UI.
-In addition to the sample application source code, there is a run/debug configuration for running or debugging the application. The run configuration has the same name as the main application class (Main) and is shown in the run configuration selector on the toolbar.
+`src`文件夹存放源代码。在这个文件夹中已经有个`sample`名称的包名，有以下三个文件：
 
-/help/img/idea/2016.3/JavaFXRunConfig.png
-There is also an artifact configuration intended for packaging your application. (This artifact configuration is not visible at the moment). We'll discuss this configuration later (see Packaging JavaFX Applications).
 
-Running the sample application
+- `Main.java`是主应用程序类，用于启动本示例程序。
 
-To make sure that everything is fine with the project, let's run the sample application straight away:
+- `sample.fxml`是FXML文件用于定义用户界面。 
 
-Click /help/img/idea/2016.3/run.png on the toolbar.
-IntelliJ IDEA compiles the source code and then starts the application. The application window appears which, at the moment, is empty.
+- `Controller.java`. 这是控制类用于处理上层界面的节目交互。
 
-/help/img/idea/2016.3/JavaFX01AppWindow01.png
-Close the application window.
+在IDE界面工具栏中间有个 **run/debug**工具框，工具框列表选项中显示和主应用类相同的名称（`Main`）。
+
+![](/chapter2/experiment01/JavaFXRunConfig.png)
+
+### 运行示例程序
+
+为确保程序没有错误, 点击工具栏里的![](/chapter2/experiment01/run.png)图标。等待
+`IntelliJ IDEA`编译完成后程序会自动运行，界面会显示一个空白的窗体。
+
+![](JavaFX01AppWindow01.png)
+
+点击右上角的关闭按钮关闭应用程序。
+
