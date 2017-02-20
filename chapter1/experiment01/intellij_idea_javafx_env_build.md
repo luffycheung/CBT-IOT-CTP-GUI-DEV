@@ -123,7 +123,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)
 ### 认识JavaFX项目
 
 
-![](/chapter2/experiment01/NewProjectJavaFXInitialStructure.png)
+![](NewProjectJavaFXInitialStructure.png)
 
 `src`文件夹存放源代码。在这个文件夹中已经有个`sample`名称的包名，有以下三个文件：
 
@@ -136,11 +136,11 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)
 
 在IDE界面工具栏中间有个 **run/debug**工具框，工具框列表选项中显示和主应用类相同的名称（`Main`）。
 
-![](/chapter2/experiment01/JavaFXRunConfig.png)
+![](JavaFXRunConfig.png)
 
 ### 运行示例程序
 
-为确保程序没有错误, 点击工具栏里的![](/chapter2/experiment01/run.png)图标。等待
+为确保程序没有错误, 点击工具栏里的![](run.png)图标。等待
 `IntelliJ IDEA`编译完成后程序会自动运行，界面会显示一个空白的窗体。
 
 ![](JavaFX01AppWindow01.png)

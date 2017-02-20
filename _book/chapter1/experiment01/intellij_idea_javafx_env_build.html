@@ -1,0 +1,528 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>实验一. IntelliJ IDEA for JavaFX环境搭建 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../experiment02/javafx_hellowlrld.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    第一章.  JavaFX 应用程序开发基础入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="intellij_idea_javafx_env_build.html">
+            
+                <a href="intellij_idea_javafx_env_build.html">
+            
+                    
+                    实验一. IntelliJ IDEA for JavaFX环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../experiment02/javafx_hellowlrld.html">
+            
+                <a href="../experiment02/javafx_hellowlrld.html">
+            
+                    
+                    实验二. Hello World入门实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../experiment03/packing_javafx_app.html">
+            
+                <a href="../experiment03/packing_javafx_app.html">
+            
+                    
+                    实验三. JavaFX应用打包实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../chapter2/">
+            
+                <a href="../../chapter2/">
+            
+                    
+                    第二章.  基于JavaFX的物联网综合应用开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../chapter2/experiment01/sensordemo.html">
+            
+                <a href="../../chapter2/experiment01/sensordemo.html">
+            
+                    
+                    实验一. 传感器SensorDemo串口处理软件开发实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../chapter2/experiment02/wsn_demo.html">
+            
+                <a href="../../chapter2/experiment02/wsn_demo.html">
+            
+                    
+                    实验二. 基于无线传感器网络的传感器信息采集与控制实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../chapter2/experiment03/smarthome_sensor_demo.html">
+            
+                <a href="../../chapter2/experiment03/smarthome_sensor_demo.html">
+            
+                    
+                    实验三. 智慧家庭环境监测实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../chapter2/experiment04/smarthome_device_control.html">
+            
+                <a href="../../chapter2/experiment04/smarthome_device_control.html">
+            
+                    
+                    实验四. 智慧家庭家电控制实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../chapter2/experiment05/smartagricultrue_autothermostat.html">
+            
+                <a href="../../chapter2/experiment05/smartagricultrue_autothermostat.html">
+            
+                    
+                    实验五. 智慧农业自动控温系统实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../chapter2/experiment06/smartagricultrue_auto_ventilation.html">
+            
+                <a href="../../chapter2/experiment06/smartagricultrue_auto_ventilation.html">
+            
+                    
+                    实验六. 智慧农业自动通风系统实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../chapter2/experiment07/smartagricultrue_auto_irrigate.html">
+            
+                <a href="../../chapter2/experiment07/smartagricultrue_auto_irrigate.html">
+            
+                    
+                    实验七. 智慧农业自动喷灌系统实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../chapter2/experiment08/supermarket_manager.html">
+            
+                <a href="../../chapter2/experiment08/supermarket_manager.html">
+            
+                    
+                    实验八. 智能商超管理系统实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >实验一. IntelliJ IDEA for JavaFX环境搭建</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5B9E;&#x9A8C;&#x4E00;-intellij-idea-for-javafx&#x73AF;&#x5883;&#x642D;&#x5EFA;">&#x5B9E;&#x9A8C;&#x4E00;. IntelliJ IDEA for JavaFX&#x73AF;&#x5883;&#x642D;&#x5EFA;</h1>
+<hr>
+<h2 id="&#x5B9E;&#x9A8C;&#x76EE;&#x7684;">&#x5B9E;&#x9A8C;&#x76EE;&#x7684;</h2>
+<ul>
+<li>&#x638C;&#x63E1;&#x5728;Windows&#x4E0B;&#xFF0C;IntelliJ IDEA&#x96C6;&#x6210;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x7684;&#x642D;&#x5EFA;;</li>
+<li>&#x719F;&#x6089;&#x96C6;&#x6210;&#x5F00;&#x53D1;&#x73AF;&#x5883;;</li>
+</ul>
+<h2 id="&#x5B9E;&#x9A8C;&#x73AF;&#x5883;">&#x5B9E;&#x9A8C;&#x73AF;&#x5883;</h2>
+<ul>
+<li>&#x786C;&#x4EF6;&#xFF1A;CBT-IOT-CTP &#x5B9E;&#x9A8C;&#x5E73;&#x53F0;,PC&#x673A;;</li>
+<li>&#x8F6F;&#x4EF6;&#xFF1A; IntelliJ IDEA ,JDK,Scene Builder;</li>
+</ul>
+<h2 id="&#x5B9E;&#x9A8C;&#x5185;&#x5BB9;">&#x5B9E;&#x9A8C;&#x5185;&#x5BB9;</h2>
+<ul>
+<li>JDK&#x5B89;&#x88C5;;</li>
+<li>Scene Builder&#x754C;&#x9762;&#x8BBE;&#x8BA1;&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;&#xFF1B;</li>
+<li>IntelliJ IEDA&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x5B89;&#x88C5;&#x53CA;&#x914D;&#x7F6E;;</li>
+<li>JavaFX&#x9879;&#x76EE;&#x5DE5;&#x7A0B;&#x4ECB;&#x7ECD;&#xFF1B;</li>
+</ul>
+<p><strong>&#x5E2E;&#x52A9;&#x94FE;&#x63A5;</strong>   </p>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x60F3;&#x6536;&#x85CF;&#x4E0B;&#x9762;&#x7684;&#x94FE;&#x63A5;&#xFF1A;</p>
+<p><a href="http://docs.oracle.com/javase/8/docs/api/" target="_blank">Java 8 API</a> - Java &#x6807;&#x51C6;&#x7C7B;&#x7684;&#x6587;&#x6863;&#x3002;</p>
+<p><a href="http://docs.oracle.com/javase/8/javafx/api/" target="_blank">JavaFX 8 API</a> - JavaFX &#x7C7B;&#x7684;&#x6587;&#x6863;&#x3002;</p>
+<p><a href="https://www.jetbrains.com/help/idea/2016.3/javafx.html" target="_blank">IDEA JavaFX</a> - &#x5728;IntelliJ IDEA&#x73AF;&#x5883;&#x4E0B;&#x5F00;&#x53D1;JavaFX&#x7684;&#x6587;&#x6863;&#x3002;</p>
+<p><a href="http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm" target="_blank">Oracle&apos;s JavaFX Tutorials</a> - Oracle &#x7684; JavaFX &#x5B98;&#x65B9;&#x6559;&#x7A0B;&#x3002;   </p>
+<p>&#x4E00;&#x5207;&#x5C31;&#x7EEA;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x5427;&#xFF01;</p>
+<h2 id="&#x5B9E;&#x9A8C;&#x6B65;&#x9AA4;">&#x5B9E;&#x9A8C;&#x6B65;&#x9AA4;</h2>
+<p>&#x2003;&#x2003;<strong>&#x672C;&#x5730;&#x5B89;&#x88C5;&#x5305;&#x8DEF;&#x5F84;&#xFF1A;</strong><code>&#x5149;&#x76D8;\tools\Windows&#x73AF;&#x5883;&#x642D;&#x5EFA;\</code>&#x3002;</p>
+<pre><code>&#x251C;&#x2500;&#x2500; jdk-8u121-windows-x64.exe
+&#x251C;&#x2500;&#x2500; ideaIC-2016.3.4.exe
+&#x2514;&#x2500;&#x2500; SceneBuilder-8.3.0.exe
+</code></pre><h3 id="java&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x5B89;&#x88C5;">Java&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x5B89;&#x88C5;</h3>
+<ul>
+<li>&#x542F;&#x52A8;<code>jdk-*.exe</code>&#xFF0C;&#x6839;&#x636E;&#x5B89;&#x88C5;&#x5411;&#x5BFC;&#x6307;&#x793A;&#x5B89;&#x88C5;&#x3002;</li>
+<li>&#x914D;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;&#x9009;&#x62E9;<strong>&#x201C;Start&#x201D;&#x83DC;&#x5355; &gt; &#x7535;&#x8111; &gt; &#x5C5E;&#x6027; &gt; &#x9AD8;&#x7EA7;&#x7CFB;&#x7EDF;&#x9009;&#x9879;</strong>&#x3002;&#x7136;&#x540E;&#x6253;&#x5F00;<strong>&#x201C;&#x9AD8;&#x7EA7;&#x201D;&#x9009;&#x9879;&#x5361; &gt; &#x73AF;&#x5883;&#x53D8;&#x91CF;</strong>&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x3002;<ul>
+<li>&#x5728;&#x201C;&#x7CFB;&#x7EDF;&#x53D8;&#x91CF;&#x201D;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x540D;&#x4E3A;<code>JAVA_HOME</code>&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x53D8;&#x91CF;&#x503C;&#x4E3A;&#x4F60;&#x672C;&#x5730;java&#x7684;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#xFF0C;&#x8FD9;&#x91CC;&#x4E3A;&#xFF1A;<code>C:\Program Files\Java\jdk1.8.0_31</code>&#xFF0C;&#x8BBE;&#x7F6E;&#x8FD9;&#x4E2A;&#x7684;&#x76EE;&#x7684;&#x662F;&#x4F5C;&#x4E3A;&#x4E0B;&#x9762;&#x4E24;&#x4E2A;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7684;&#x4E00;&#x4E2A;&#x5F15;&#x7528;</li>
+<li>&#x5728;&#x201C;&#x7CFB;&#x7EDF;&#x53D8;&#x91CF;&#x201D;&#x9009;&#x9879;&#x533A;&#x57DF;&#x4E2D;&#x67E5;&#x770B;PATH&#x53D8;&#x91CF;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x65B0;&#x5EFA;&#x53D8;&#x91CF;PATH&#xFF0C;&#x5426;&#x5219;&#x9009;&#x4E2D;&#x8BE5;&#x53D8;&#x91CF;&#xFF0C;&#x5355;&#x51FB;&#x201C;&#x7F16;&#x8F91;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x5728;&#x201C;&#x53D8;&#x91CF;&#x503C;&#x201D;&#x6587;&#x672C;&#x6846;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x6DFB;&#x52A0;<code>&#x201C;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;&#x201D;</code> </li>
+<li>&#x5728;&#x201C;&#x7CFB;&#x7EDF;&#x53D8;&#x91CF;&#x201D;&#x9009;&#x9879;&#x533A;&#x57DF;&#x4E2D;&#x67E5;&#x770B;<code>CLASSPATH</code>&#x53D8;&#x91CF;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x65B0;&#x5EFA;&#x53D8;&#x91CF;<code>CLASSPATH</code>&#xFF0C;&#x5426;&#x5219;&#x9009;&#x4E2D;&#x8BE5;&#x53D8;&#x91CF;&#xFF0C;&#x5355;&#x51FB;&#x201C;&#x7F16;&#x8F91;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x5728;&#x201C;&#x53D8;&#x91CF;&#x503C;&#x201D;&#x6587;&#x672C;&#x6846;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x6DFB;&#x52A0;<code>&#x201C;.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;&#x201D;</code>&#x3002;<br>
+&#x5224;&#x65AD;&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;&#xFF1A;<br>
+&#x5728;cmd&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;</li>
+</ul>
+</li>
+</ul>
+<pre><code>java -version
+</code></pre><p>&#x51FA;&#x73B0;&#x5982;&#x4E0B;&#x6253;&#x5370;&#x4FE1;&#x606F;&#x8BF4;&#x660E;&#x914D;&#x7F6E;&#x6210;&#x529F;&#xFF1A;
+&#x200B;    </p>
+<pre><code>java version &quot;1.8.0_121&quot;
+Java(TM) SE Runtime Environment (build 1.8.0_121-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)
+</code></pre><h3 id="scene-builder&#x5B89;&#x88C5;">Scene Builder&#x5B89;&#x88C5;</h3>
+<ul>
+<li>&#x8FD0;&#x884C;<code>SceneBuilder*.exe</code>&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x5B89;&#x88C5;&#x5373;&#x53EF;&#x3002;&#x6309;&#x7167;&#x5B8C;&#x6210;&#x540E;&#x52FE;&#x9009;&#x53D6;&#x6D88;&#x6CE8;&#x518C;&#x8D26;&#x53F7;&#x6309;&#x94AE;&#x8FDB;&#x5165;&#x4E3B;&#x754C;&#x9762;&#x3002;</li>
+</ul>
+<p><img src="2017-02-19-23-16-42.png" alt=""></p>
+<h3 id="intellij-ieda&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x5B89;&#x88C5;">IntelliJ IEDA&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x5B89;&#x88C5;</h3>
+<ul>
+<li><p>&#x8FD0;&#x884C;<code>idea*.exe</code>&#x6587;&#x4EF6;&#xFF0C;&#x6309;&#x7167;&#x5B89;&#x88C5;&#x5411;&#x5BFC;&#x9ED8;&#x8BA4;&#x5B89;&#x88C5;&#x5373;&#x53EF;&#x3002;</p>
+</li>
+<li><p>&#x5728;Window&#x4E2D;&#x8FD0;&#x884C;IntelliJ IDEA</p>
+</li>
+</ul>
+<p>&#x5982;&#x679C;&#x4F60;&#x5728;&#x5B89;&#x88C5;&#x8FC7;&#x7A0B;&#x4E2D;&#x9009;&#x62E9;&#x5728;&#x684C;&#x9762;&#x521B;&#x5EFA;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#xFF0C;&#x76F4;&#x63A5;&#x53CC;&#x51FB;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x5373;&#x53EF;&#x3002;
+&#x5426;&#x5219;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x6253;&#x5F00;<intellij idea="">\bin&#x76EE;&#x5F55;(&#x4F8B;&#x5982;:<code>C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2016.3.4\bin</code>)&#x7136;&#x540E;&#x8FD0;&#x884C;<code>idea.exe</code>&#x6216;&#x8005;&#x662F;<code>idea.bat</code>&#x3002;</intellij></p>
+<p>&#x9996;&#x6B21;&#x8FD0;&#x884C;&#x4F1A;&#x51FA;&#x73B0;&#x8BBE;&#x7F6E;&#x5411;&#x5BFC;&#xFF0C;&#x9009;&#x62E9;<code>Skip All and Set Defaults</code>&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x3002;</p>
+<h3 id="&#x914D;&#x7F6E;idea&#x73AF;&#x5883;">&#x914D;&#x7F6E;IDEA&#x73AF;&#x5883;</h3>
+<ul>
+<li>&#x786E;&#x4FDD;JavaFX&#x63D2;&#x4EF6;&#x5DF2;&#x7ECF;&#x542F;&#x7528;&#x3002;&#xFF08;&#x6539;&#x63D2;&#x4EF6;&#x96C6;&#x6210;&#x5728;IDE&#x6309;&#x7167;&#x5305;&#x5185;&#x9ED8;&#x8BA4;&#x662F;&#x542F;&#x7528;&#x72B6;&#x6001;&#xFF09;</li>
+</ul>
+<p>&#x67E5;&#x770B;&#x65B9;&#x6CD5;&#xFF1A;
+&#x5728;&#x4E0A;&#x6B65;&#x7684;&#x6B22;&#x8FCE;&#x754C;&#x9762;&#x53F3;&#x4E0B;&#x89D2;&#x4E2D;&#x70B9;&#x51FB;<code>Configure</code>,&#x9009;&#x62E9;&#x6253;&#x5F00; <code>Plugins</code> &#x786E;&#x4FDD; <code>JavaFX</code>&#x53F3;&#x4FA7;&#x662F;&#x2611;&#xFE0F;&#x72B6;&#x6001;&#x3002;</p>
+<p><img src="2017-02-19-23-35-41.png" alt=""></p>
+<h3 id="&#x521B;&#x5EFA;&#x4E2A;javafx&#x9879;&#x76EE;">&#x521B;&#x5EFA;&#x4E2A;JavaFX&#x9879;&#x76EE;</h3>
+<p>&#x5728;&#x4E0A;&#x6B65;&#x7684;&#x6B22;&#x8FCE;&#x754C;&#x9762;&#x4E2D;&#x9009;&#x62E9;<code>Create New Project</code>,&#x5DE6;&#x4FA7;&#x5217;&#x8868;&#x9009;&#x62E9;<code>Java JavaFX</code>,&#x70B9;&#x51FB;<code>Next</code>,&#x9879;&#x76EE;&#x540D;&#x9ED8;&#x8BA4;&#xFF0C;&#x70B9;<code>Finish</code>&#x5B8C;&#x6210;&#x521B;&#x5EFA;&#x3002;</p>
+<ul>
+<li>&#x70B9;&#x51FB;&#x83DC;&#x5355;&#x680F;<code>View</code>&#xFF0C;&#x5C06;<code>ToolBar</code>&#x548C;<code>Tool Buttons</code>&#x52FE;&#x9009;&#x4E0A;&#x3002;&#x754C;&#x9762;&#x5165;&#x4E0B;&#x56FE;&#xFF1A;</li>
+</ul>
+<p><img src="2017-02-19-23-40-50.png" alt=""></p>
+<h3 id="&#x7ED9;intellij-idea&#x8BBE;&#x7F6E;jdk&#x3002;">&#x7ED9;IntelliJ IDEA&#x8BBE;&#x7F6E;JDK&#x3002;</h3>
+<p>&#xFF08;&#x9ED8;&#x8BA4;JDK&#x5DF2;&#x5B89;&#x88C5;&#xFF0C;&#x5728;IDEA&#x5B89;&#x88C5;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F1A;&#x81EA;&#x52A8;&#x68C0;&#x6D4B;JDK&#x5E76;&#x914D;&#x7F6E;&#xFF09;</p>
+<p>&#x8BBE;&#x7F6E;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li>&#x5728;&#x4E3B;&#x83DC;&#x5355;&#x9009;&#x62E9;<strong>File | Project Structure</strong>&#xFF1B;</li>
+<li>&#x5DE6;&#x4FA7;&#x9762;&#x677F;&#x9009;&#x62E9;<strong>Platform Settings | SDKs</strong>&#xFF1B;</li>
+<li>&#x53F3;&#x4FA7;&#x9762;&#x677F;&#x70B9;&#x51FB;<code>&#x2795;</code>&#x53F7;&#xFF0C;&#x6253;&#x5F00;&#x7684;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#x9009;&#x62E9;&#x672C;&#x5730;JDK&#x5B89;&#x88C5;&#x8DEF;&#x5F84;&#xFF0C;&#x70B9;&#x51FB;<code>OK</code>&#x3002;</li>
+</ul>
+<p><img src="2017-02-19-23-56-11.png" alt=""></p>
+<h3 id="&#x7ED9;intellij-idea&#x914D;&#x7F6E;scene-builder">&#x7ED9;IntelliJ IDEA&#x914D;&#x7F6E;Scene Builder</h3>
+<ul>
+<li><p>&#x6253;&#x5F00;<code>Settings</code>,&#x5DE6;&#x4FA7;&#x9762;&#x677F;&#x9009;&#x62E9;<strong>Languages and Frameworkds | JavaFX</strong>&#xFF1B; </p>
+</li>
+<li><p>&#x53F3;&#x4FA7;&#x70B9;&#x51FB;&#x6D4F;&#x89C8;&#x6309;&#x94AE;&#xFF0C;&#x5B9A;&#x4F4D;&#x5230;&#x672C;&#x5730;<code>SceneBuilder</code>&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#xFF0C;&#x9009;&#x62E9;<code>SceneBuilder.exe</code>;</p>
+</li>
+<li><p>&#x70B9;&#x51FB;&#x4E0B;&#x65B9;&#x7684;<code>Apply</code>&#x548C;<code>OK</code>&#x6309;&#x94AE;&#x5E94;&#x7528;&#x3002;</p>
+</li>
+</ul>
+<p><img src="2017-02-20-00-09-33.png" alt=""></p>
+<h3 id="&#x8BA4;&#x8BC6;javafx&#x9879;&#x76EE;">&#x8BA4;&#x8BC6;JavaFX&#x9879;&#x76EE;</h3>
+<p><img src="NewProjectJavaFXInitialStructure.png" alt=""></p>
+<p><code>src</code>&#x6587;&#x4EF6;&#x5939;&#x5B58;&#x653E;&#x6E90;&#x4EE3;&#x7801;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x5DF2;&#x7ECF;&#x6709;&#x4E2A;<code>sample</code>&#x540D;&#x79F0;&#x7684;&#x5305;&#x540D;&#xFF0C;&#x6709;&#x4EE5;&#x4E0B;&#x4E09;&#x4E2A;&#x6587;&#x4EF6;&#xFF1A;</p>
+<ul>
+<li><p><code>Main.java</code>&#x662F;&#x4E3B;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7C7B;&#xFF0C;&#x7528;&#x4E8E;&#x542F;&#x52A8;&#x672C;&#x793A;&#x4F8B;&#x7A0B;&#x5E8F;&#x3002;</p>
+</li>
+<li><p><code>sample.fxml</code>&#x662F;FXML&#x6587;&#x4EF6;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x7528;&#x6237;&#x754C;&#x9762;&#x3002; </p>
+</li>
+<li><p><code>Controller.java</code>. &#x8FD9;&#x662F;&#x63A7;&#x5236;&#x7C7B;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x4E0A;&#x5C42;&#x754C;&#x9762;&#x7684;&#x8282;&#x76EE;&#x4EA4;&#x4E92;&#x3002;</p>
+</li>
+</ul>
+<p>&#x5728;IDE&#x754C;&#x9762;&#x5DE5;&#x5177;&#x680F;&#x4E2D;&#x95F4;&#x6709;&#x4E2A; <strong>run/debug</strong>&#x5DE5;&#x5177;&#x6846;&#xFF0C;&#x5DE5;&#x5177;&#x6846;&#x5217;&#x8868;&#x9009;&#x9879;&#x4E2D;&#x663E;&#x793A;&#x548C;&#x4E3B;&#x5E94;&#x7528;&#x7C7B;&#x76F8;&#x540C;&#x7684;&#x540D;&#x79F0;&#xFF08;<code>Main</code>&#xFF09;&#x3002;</p>
+<p><img src="JavaFXRunConfig.png" alt=""></p>
+<h3 id="&#x8FD0;&#x884C;&#x793A;&#x4F8B;&#x7A0B;&#x5E8F;">&#x8FD0;&#x884C;&#x793A;&#x4F8B;&#x7A0B;&#x5E8F;</h3>
+<p>&#x4E3A;&#x786E;&#x4FDD;&#x7A0B;&#x5E8F;&#x6CA1;&#x6709;&#x9519;&#x8BEF;, &#x70B9;&#x51FB;&#x5DE5;&#x5177;&#x680F;&#x91CC;&#x7684;<img src="run.png" alt="">&#x56FE;&#x6807;&#x3002;&#x7B49;&#x5F85;
+<code>IntelliJ IDEA</code>&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#x540E;&#x7A0B;&#x5E8F;&#x4F1A;&#x81EA;&#x52A8;&#x8FD0;&#x884C;&#xFF0C;&#x754C;&#x9762;&#x4F1A;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#x7684;&#x7A97;&#x4F53;&#x3002;</p>
+<p><img src="JavaFX01AppWindow01.png" alt=""></p>
+<p>&#x70B9;&#x51FB;&#x53F3;&#x4E0A;&#x89D2;&#x7684;&#x5173;&#x95ED;&#x6309;&#x94AE;&#x5173;&#x95ED;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 第一章.  JavaFX 应用程序开发基础入门">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../experiment02/javafx_hellowlrld.html" class="navigation navigation-next " aria-label="Next page: 实验二. Hello World入门实验">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"实验一. IntelliJ IDEA for JavaFX环境搭建","level":"1.2.1","depth":2,"next":{"title":"实验二. Hello World入门实验","level":"1.2.2","depth":2,"path":"chapter1/experiment02/javafx_hellowlrld.md","ref":"chapter1/experiment02/javafx_hellowlrld.md","articles":[]},"previous":{"title":"第一章.  JavaFX 应用程序开发基础入门","level":"1.2","depth":1,"path":"chapter1/README.md","ref":"chapter1/README.md","articles":[{"title":"实验一. IntelliJ IDEA for JavaFX环境搭建","level":"1.2.1","depth":2,"path":"chapter1/experiment01/intellij_idea_javafx_env_build.md","ref":"chapter1/experiment01/intellij_idea_javafx_env_build.md","articles":[]},{"title":"实验二. Hello World入门实验","level":"1.2.2","depth":2,"path":"chapter1/experiment02/javafx_hellowlrld.md","ref":"chapter1/experiment02/javafx_hellowlrld.md","articles":[]},{"title":"实验三. JavaFX应用打包实验","level":"1.2.3","depth":2,"path":"chapter1/experiment03/packing_javafx_app.md","ref":"chapter1/experiment03/packing_javafx_app.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"ignores":["实验二. Visual Studio for C#开发环境搭建"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapter1/experiment01/intellij_idea_javafx_env_build.md","mtime":"2017-02-20T13:19:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-20T13:25:49.049Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
