@@ -1,6 +1,29 @@
 # 实验二. 基于MVVM架构的传感器SensorDemo串口处理软件开发实验
 
 -----
+<!-- TOC -->
+
+- [实验二. 基于MVVM架构的传感器SensorDemo串口处理软件开发实验](#实验二-基于mvvm架构的传感器sensordemo串口处理软件开发实验)
+    - [实验目的](#实验目的)
+    - [实验环境](#实验环境)
+    - [实验内容](#实验内容)
+    - [实验步骤](#实验步骤)
+        - [创建maven多模块功能](#创建maven多模块功能)
+        - [配置maven工程](#配置maven工程)
+            - [在主maven项目pom.xml文件中配置全局依赖库及其他属性](#在主maven项目pomxml文件中配置全局依赖库及其他属性)
+            - [配置子模块pom.xml](#配置子模块pomxml)
+        - [将实验一中有关串口处理的相关类及文件重构到UartModel模块中](#将实验一中有关串口处理的相关类及文件重构到uartmodel模块中)
+        - [通过Artifacts将串口库module编译为jar包形式并加入全局库中](#通过artifacts将串口库module编译为jar包形式并加入全局库中)
+            - [生成JAR包](#生成jar包)
+            - [将串口库jar加入到全局库中](#将串口库jar加入到全局库中)
+        - [依照MVVM基础入门实验方法编写mvvm-SensorDemo模块](#依照mvvm基础入门实验方法编写mvvm-sensordemo模块)
+            - [创建mvvm工程框架](#创建mvvm工程框架)
+            - [设计界面](#设计界面)
+            - [设计View类和ViewModel类完成用户交互操作功能](#设计view类和viewmodel类完成用户交互操作功能)
+            - [实现业务逻辑并完善ViewModel类](#实现业务逻辑并完善viewmodel类)
+        - [运行mvvm-SensorDemo主函数](#运行mvvm-sensordemo主函数)
+
+<!-- /TOC -->
 
 ## 实验目的
 - 熟悉maven多模块程序的创建及其依赖关系;
@@ -17,7 +40,8 @@
 
 ## 实验步骤
 
-### 创建maven多模块工程
+### 创建maven多模块功能
+
 
 1. 从”File”菜单中选择”New Project”。
 
@@ -33,9 +57,10 @@
 
 5. 同第4步创建串口库Module，本例中命名为`uart-model`。
 
-### 配置maven工程
+### 配置maven工程
 
-#### 在主maven项目的`pom.xml`中配置全局依赖库及其他属性
+
+#### 在主maven项目pom.xml文件中配置全局依赖库及其他属性
 
 在`IOTSamples`根目录下的`pom.xml`文件中添加入下内容：
 
@@ -165,7 +190,7 @@
 
 **代码解释**：使用继承机制以及dependencyManagement元素解决**多模块依赖配置重复**。**dependencyManagement**只会影响现有依赖的配置，但不会引入依赖。
 
-#### 配置子模块`pom.xml`
+#### 配置子模块pom.xml
 
 **mvvm-SensorDemo**子模块需要使用到mvvmfx、jssc等库，根据上步中的全局配置可在pom中简化依赖配置成如下：
 ```xml
@@ -260,7 +285,7 @@
 </project>
 ```
 
-### 将实验一中有关串口处理的相关类及文件重构到**UartModel**模块中
+### 将实验一中有关串口处理的相关类及文件重构到UartModel模块中
 
 - `src\main\java`下创建包`edu.iot.lib`，将实验一代码中的`model`包拷贝至该lib包内容。
 - `src\main\resources`下将实验一resources中关于传感器到图片拷贝至`images`文件夹下。
@@ -268,9 +293,10 @@
 最终模块代码框架如下图：
 ![](2017-05-15-09-42-28.png)
 
-### 通过**Artifacts**将串口库module编译为jar包形式，并加入全局库中
+### 通过Artifacts将串口库module编译为jar包形式并加入全局库中
 
 #### 生成JAR包
+
 操作方法可参考[实验三. JavaFX应用打包实验](../../chapter1/experiment03/packing_javafx_app.md)，具体步骤如下：
 
 - 点击**File**->**Project Structure**,左侧窗口选择**Artifacts**;
@@ -282,7 +308,7 @@
 
 构建成功后会在输出目录下生成`uart-model-1.0.0.jar`文件。
 
-#### 将串口库jar加入的全局库中
+#### 将串口库jar加入到全局库中
 
 - 定位到`uart-model-1.0.0.jar`文件，右键鼠标选择**Add as Library...**;
 - **Level**选择为**Global Library**，**Add to module：**选择**mvvm-SensorDemo**，之后点击**OK**。
@@ -290,11 +316,12 @@
 加入成功后点开jar包可看到里面内容如下：
 ![](2017-05-15-10-39-13.png)
 
-### 依照MVVM基础入门实验方法编写**mvvm-SensorDemo**模块
+### 依照MVVM基础入门实验方法编写mvvm-SensorDemo模块
 
 #### 创建mvvm工程框架
 
-1. 依据mvvm类规约，创建工程包，具体如下：
+1. 依据mvvm类规约，创建工程包，具体如下：   
+
 ```
 ├─src
 │  ├─main
@@ -316,8 +343,8 @@
 │  └─test
 │      └─java
 └─
+```   
 
-```
 2. 创建View类、ViewModel类及FXML文件
 
 依据MVVM设计思想将串口操作与业务逻辑分类（界面和代码），具体如下：
@@ -435,7 +462,7 @@
 
 ```
 
-#### 设计View类和ViewModel类，完成用户交互操作功能
+#### 设计View类和ViewModel类完成用户交互操作功能
 
 1. **MainContext**类
 
@@ -745,7 +772,7 @@ public class MainContainerView implements FxmlView<MainContainerViewModel>, Init
     }
 ```
 
-#### 实现业务逻辑，完善ViewModel类
+#### 实现业务逻辑并完善ViewModel类
 
 1. **UartViewModel**类
 
@@ -936,7 +963,7 @@ public class MainContainerViewModel implements ViewModel,UartConnectorDelegate{
 }
 ```
 
-### 运行`mvvm-SensorDemo`主函数
+### 运行mvvm-SensorDemo主函数
 
 界面操作同实验一。
 
