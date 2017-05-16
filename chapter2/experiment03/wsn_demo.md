@@ -26,7 +26,7 @@
 <!-- /TOC -->
 
 ## 实验目的
-- 掌握controlsfx组件库及TableVie组件的使用方法;
+- 掌握controlsfx组件库及TableVie组件的使用方法;
 - 掌握JavaFX数据绑定方法；
 - 掌握MVVM框架设计思想;
 
@@ -36,7 +36,7 @@
 
 ## 实验内容
 
-- 通过MVVM框架编程实现基于ZigBee无线传感器网络的智能家居环境检测于控制实验功能。
+- 通过MVVM框架编程实现基于ZigBee无线传感器网络的智能家居环境检测于控制实验功能。
 
 
 
@@ -976,7 +976,7 @@ public class MainContainerViewModel implements ViewModel ,UartConnectorDelegate{
 #### 运行演示
 
 - 实训台设备上电，使用香蕉线将网关区的ZigBee协调器模块串口于USB2UART模块相连。
-（TXD／RXD注意交叉相连；USB2UART模块拨码开关拨到Node方向）
+  （TXD／RXD注意交叉相连；USB2UART模块拨码开关拨到Node方向）
 - 使用miniUSB线将USB2UART模块和电脑相连。（安装好U转串驱动）
 - 运行mvvm-WsnDemo工程的主程序`Main.java`。
 - 选择连接到电脑上的U转串模块串口，波特率选择115200，点击右侧打开按钮。
